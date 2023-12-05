@@ -50,7 +50,7 @@ export default function Card() {
         <div className={`card ${""}`}>
             <Title />
             <Count>
-                {`0${minutes}`}<p>:</p>{seconds > 9 ? `${seconds}` : `0${seconds}`}
+                {`0${minutes}:`}{seconds > 9 ? `${seconds}` : `0${seconds}`}
             </Count>
 
             <ResetButton onClick={handleStop} />
