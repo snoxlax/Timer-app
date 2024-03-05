@@ -137,8 +137,9 @@ main {
 
     .time {
         color: #1d2507;
-        font-size: 150px;
+        font-size: 30vw;
         margin-left: 0px;
+        margin-top: 200px;
         text-align: center;
     }
 
