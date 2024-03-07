@@ -11,6 +11,14 @@ button {
     all: unset;
 }
 
+input {
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    width: auto;
+    max-width: 240px;
+}
+
 body {
     font-family: Lato, sans-serif;
     height: 100vh;
@@ -139,7 +147,7 @@ main {
         color: #1d2507;
         font-size: 30vw;
         margin-left: 0px;
-        margin-top: 200px;
+        margin-top: 2vh;
         text-align: center;
     }
 
