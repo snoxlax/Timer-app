@@ -77,14 +77,14 @@ export default function Card() {
                             onBlur={() => setInputMinActiveChange(false)}
                             type="number"
                             placeholder="00"
-                            className="time"
+                            className="timeInput"
                             value={inputMinutes}
                             autoFocus
                         />
                     </>
                 ) : (
                     <>
-                        <span className="time" onClick={() => setInputMinActiveChange(true)}>{inputMinutes >= 10 || inputMinutes.length >= 2 ? inputMinutes : `0${inputMinutes}`}</span>
+                        <span onClick={() => setInputMinActiveChange(true)}>{inputMinutes >= 10 || inputMinutes.length >= 2 ? inputMinutes : `0${inputMinutes}`}</span>
                     </>
                 )}
                 {":"}
@@ -95,14 +95,14 @@ export default function Card() {
                             onBlur={() => setInputSecActiveChange(false)}
                             type="number"
                             placeholder="00"
-                            className="time"
+                            className="timeInput"
                             value={inputSeconds}
                             autoFocus
                         />
                     </>
                 ) : (
                     <>
-                        <span className="time" onClick={() => setInputSecActiveChange(true)}>{inputSeconds >= 10 || inputSeconds.length >= 2 ? inputSeconds : `0${inputSeconds}`}</span>
+                        <span onClick={() => setInputSecActiveChange(true)}>{inputSeconds >= 10 || inputSeconds.length >= 2 ? inputSeconds : `0${inputSeconds}`}</span>
                     </>
                 )}
 

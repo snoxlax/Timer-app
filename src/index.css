@@ -7,16 +7,33 @@
     box-sizing: border-box;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 button {
     all: unset;
 }
 
 input {
     background-color: transparent;
-    border: none;
-    display: inline-block;
-    width: auto;
     max-width: 240px;
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+    padding: 1px 1px 1px 1px;
+    margin: 1px 1px 1px 1px;
+    border: 1px solid #00679b;
+    outline: none;
+    max-height: 170px;
+    border-radius: 10px;
 }
 
 body {
@@ -71,18 +88,30 @@ main {
     font-size: 200px;
     font-weight: 600;
     width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .time {
     color: #080725;
     font-size: 200px;
     font-weight: 600;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.timeInput {
+    color: #1d2507;
+    font-size: 200px;
+    margin-left: 0px;
+    padding-bottom: 10px;
     text-align: center;
 }
 
 .reset-btn {
     cursor: pointer;
     opacity: 0.3;
+    margin-top: 10px;
     transition: all 0.4s;
 }
 
@@ -137,6 +166,12 @@ main {
 }
 
 @media (max-width: 680px) or (max-height: 730px) {
+
+    input {
+        max-width: 125px;
+        max-height: 115px;
+    }
+
     .card {
         width: 100%;
         height: 100%;
@@ -145,9 +180,15 @@ main {
 
     .time {
         color: #1d2507;
-        font-size: 30vw;
+        font-size: 28vw;
         margin-left: 0px;
-        margin-top: 2vh;
+        text-align: center;
+    }
+
+    .timeInput {
+        color: #1d2507;
+        font-size: 28vw;
+        margin-left: 0px;
         text-align: center;
     }
 
@@ -157,11 +198,17 @@ main {
     }
 
     .title {
-        margin-top: 100px;
+        margin-top: 30px;
     }
 
     .buttons {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
     }
+
+    .button-container {
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
 }
