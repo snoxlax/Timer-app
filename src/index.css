@@ -1,214 +1,212 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* Firefox */
-input[type=number] {
-    -moz-appearance: textfield;
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 
 button {
-    all: unset;
+  all: unset;
 }
 
 input {
-    background-color: transparent;
-    max-width: 240px;
-    font-family: Lato, sans-serif;
-    font-weight: 600;
-    padding: 1px 1px 1px 1px;
-    margin: 1px 1px 1px 1px;
-    border: 1px solid #00679b;
-    outline: none;
-    max-height: 170px;
-    border-radius: 10px;
+  background-color: transparent;
+  max-width: 240px;
+  font-family: Lato, sans-serif;
+  font-weight: 600;
+  padding: 1px 1px 1px 1px;
+  margin: 1px 1px 1px 1px;
+  border: 1px solid #00679b;
+  outline: none;
+  max-height: 170px;
+  border-radius: 10px;
 }
 
 body {
-    font-family: Lato, sans-serif;
-    height: 100vh;
-    background-image: radial-gradient(ellipse, #002553, #001324);
+  font-family: Lato, sans-serif;
+  height: 100dvh;
+  background-image: radial-gradient(ellipse, #002553, #001324);
 }
 
 #root {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 main {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-    background-color: rgb(69, 171, 255);
-    width: 700px;
-    height: 615px;
-    border-radius: 12px;
-    box-shadow: 0 25px 121px rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: all 0.4s;
+  background-color: rgb(69, 171, 255);
+  width: 700px;
+  height: 615px;
+  border-radius: 12px;
+  box-shadow: 0 25px 121px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.4s;
 }
 
 .card--limit {
-    background-color: #331bd1;
+  background-color: #331bd1;
 }
 
 .title {
-    opacity: 0.6;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    width: 200px;
-    text-align: center;
-    line-height: 0.9;
-    font-weight: 500;
-    font-size: 32px;
-    margin-top: 60px;
+  opacity: 0.6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 200px;
+  text-align: center;
+  line-height: 0.9;
+  font-weight: 500;
+  font-size: 32px;
+  margin-top: 60px;
 }
 
 .count {
-    color: #1d2507;
-    font-size: 200px;
-    font-weight: 600;
-    width: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
+  color: #1d2507;
+  font-size: 200px;
+  font-weight: 600;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .time {
-    color: #080725;
-    font-size: 200px;
-    font-weight: 600;
-    padding-bottom: 10px;
-    text-align: center;
+  color: #080725;
+  font-size: 200px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 .timeInput {
-    color: #1d2507;
-    font-size: 200px;
-    margin-left: 0px;
-    padding-bottom: 10px;
-    text-align: center;
+  color: #1d2507;
+  font-size: 200px;
+  margin-left: 0px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
 .reset-btn {
-    cursor: pointer;
-    opacity: 0.3;
-    margin-top: 10px;
-    transition: all 0.4s;
+  cursor: pointer;
+  opacity: 0.3;
+  margin-top: 10px;
+  transition: all 0.4s;
 }
 
 .reset-btn:hover,
 .reset-btn:focus {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .reset-btn-icon {
-    color: #000000;
-    height: 40px;
-    width: 40px;
+  color: #000000;
+  height: 40px;
+  width: 40px;
 }
 
 .button-container {
-    background-color: #072325;
-    height: 116px;
-    width: 100%;
-    margin-top: auto;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    display: flex;
+  background-color: #072325;
+  height: 116px;
+  width: 100%;
+  margin-top: auto;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
 }
 
 .count-btn {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: all 0.4s;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s;
 }
 
 .count-btn {
-    border-right: 1px solid rgba(0, 220, 254, 0.07);
+  border-right: 1px solid rgba(0, 220, 254, 0.07);
 }
 
 .count-btn:hover,
 .count-btn:focus {
-    background-color: #07062b;
+  background-color: #07062b;
 }
 
 .count-btn--plus {
-    border-left: 1px solid rgba(0, 0, 254, 0.15);
+  border-left: 1px solid rgba(0, 0, 254, 0.15);
 }
 
 .count-btn-icon {
-    color: #00a5fe;
-    opacity: 0.9;
-    height: 40px;
-    width: 40px;
+  color: #00a5fe;
+  opacity: 0.9;
+  height: 40px;
+  width: 40px;
 }
 
 @media (max-width: 680px) or (max-height: 730px) {
+  input {
+    max-width: 125px;
+    max-height: 115px;
+  }
 
-    input {
-        max-width: 125px;
-        max-height: 115px;
-    }
+  .card {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
 
-    .card {
-        width: 100%;
-        height: 100%;
-        border-radius: 0;
-    }
+  .time {
+    color: #1d2507;
+    font-size: 28vw;
+    margin-left: 0px;
+    text-align: center;
+  }
 
-    .time {
-        color: #1d2507;
-        font-size: 28vw;
-        margin-left: 0px;
-        text-align: center;
-    }
+  .timeInput {
+    color: #1d2507;
+    font-size: 28vw;
+    margin-left: 0px;
+    text-align: center;
+  }
 
-    .timeInput {
-        color: #1d2507;
-        font-size: 28vw;
-        margin-left: 0px;
-        text-align: center;
-    }
+  .count {
+    border-radius: 0;
+    text-align: center;
+  }
 
-    .count {
-        border-radius: 0;
-        text-align: center;
-    }
+  .title {
+    margin-top: 30px;
+  }
 
-    .title {
-        margin-top: 30px;
-    }
+  .buttons {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 
-    .buttons {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-    }
-
-    .button-container {
-        border-bottom-right-radius: 0px;
-        border-bottom-left-radius: 0px;
-    }
-
+  .button-container {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
 }
