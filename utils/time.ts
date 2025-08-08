@@ -10,13 +10,6 @@ export function setTime(min: number, sec: number) {
   return now + totalMs;
 }
 
-export function getMinutesSecondsFromMs(ms: number) {
-  const totalSeconds = Math.max(Math.floor(ms / 1000), 0);
-  const minutes = Math.floor(totalSeconds / 60);
-  const seconds = totalSeconds % 60;
-  return { minutes, seconds };
-}
-
 export function timeDiff(curr: number, future: number) {
   const diffMs = future - curr;
   const totalSec = Math.max(Math.floor(diffMs / 1000), 0);
